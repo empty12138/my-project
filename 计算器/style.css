@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+body {
+    background: url(index.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.wapper {
+    width: 420px;
+    height: 400px;
+    background-color: #ccc;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#numScreen {
+    width: 396px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.keybord {
+    display: block;
+    width: 418px;
+    height: 308px;
+    margin-top: 20px;
+}
+
+li {
+    float: left;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 65px;
+    width: 70px;
+    height: 63px;
+    border: 1px solid chocolate;
+    background: yellowgreen;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 0;
+    cursor: pointer;
+    color: white;
+}
+
+li:active {
+    background-color: #DCFF4B;
+}
+
+.tool {
+    background-color: orange;
+}
+
+.tool:active {
+    background-color: #FFCB24;
+}
+
+.ason {
+    background-color: #ff7044;
+}
+.ason:active{
+    background-color: #ffb157;
+}

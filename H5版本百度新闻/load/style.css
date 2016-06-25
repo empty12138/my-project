@@ -1,0 +1,43 @@
+body {
+    padding-top: 50px;
+    min-width: 450px;
+    background-color: #E6E6E6;
+    min-width: 500px;
+}
+
+.wapper {
+    padding-top: 30px;
+}
+
+.wapper2 {
+    height: 600px;
+    background-color: #ffffff;
+    border: 2px solid #808080;
+    box-shadow: 0 0 5px 0 #7B7881;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+.wholtable {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 1px solid #dfdfdf;
+}
+
+.navbar-brand li {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.text-warning {
+    color: white;
+}
+#eached tr:nth-child(even){
+    background-color: #EEFFCF;
+}
+#eached tr:nth-child(even):hover{
+    background-color: #E1F0C1;
+}
+}

@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+.container{
+	min-width: 320px;
+}
+header{
+	box-sizing:border-box;
+	width: 100%;
+	height: 95px;
+	background-color: #4EA2FF;
+	padding: 5px;
+
+}
+.news_header{
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+
+}
+.icon{
+	width: 34px;
+	height: 44px;
+	display: block;
+	background-image: url(bg-new-toolbar_6e9bc53.png);
+	background-size: 40px 500px;
+	
+}
+.ic1{
+	float: left;
+	background-position:-3px 5px;
+}
+.ic2{
+	float: left;
+	background-position:-3px 38px;
+}
+.ic3{
+	float: right;
+	background-position:-3px 337px;
+}
+.ic4{
+	float: right;
+	background-position:-3px 393px;
+}
+
+.bd_logo{
+	padding-top: 5px;
+	width: 80px;
+}
+
+/*导航*/
+.news_nav ul{
+	display: flex;
+    display: -webkit-flex;
+	color: rgba(255,255,255,0.5);
+	line-height: 30px;
+
+}
+.news_nav ul li{
+	text-align: center;
+	display: block;
+	height: 30px;
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    color: #ffffff;
+    
+    
+}
+.news_nav ul li a{
+	display: block;
+	font-size: 0.9em;
+	height: 26px;
+	width: 30px;
+	margin: 0 auto;
+	cursor: pointer;	
+}
+.active{
+	border-bottom: 1px solid  #fff;
+}
+
+/*内容部分*/
+.content{
+	box-sizing:border-box;
+	margin-top: 10px;
+	padding: 5px 10px;
+	width: 100%;
+	height: auto;
+	/*background-color: orange;*/
+}
+
+
+.content li{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.content h1{
+	font-size: 1.1em;
+	font-weight: 100;
+	line-height: 40px;
+}
+
+.content p{
+	font-size: 0.9em;
+	line-height: 1.2em;
+	color: #ccc;
+	margin-bottom: 5px;
+}
+ .content span{
+ 	margin-top: 10px;
+ 	font-size: 1.1em;
+ 	color: #ccc;
+ 	line-height: 35px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

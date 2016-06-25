@@ -1,0 +1,538 @@
+/*通配*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, "Hiragino Sans GB", "Hiragino Sans GB W3", \5b8b\4f53;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #eff0f0;
+}
+
+
+/*外包层*/
+
+.contianer {
+    width: 90%;
+    height: 600px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*头部百度搜索*/
+
+header {
+    width: 880px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+header img {
+    display: block;
+    margin-top: 40px;
+    float: left;
+}
+
+.head_search {
+    width: 600px;
+    height: 75px;
+    margin-top: 40px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+/*百度输入框*/
+
+input[type=text] {
+    width: 446px;
+    height: 37px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid;
+    border-right: 0;
+    display: block;
+    float: left;
+}
+
+input[type=submit] {
+    width: 118px;
+    height: 39px;
+    border: 0;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*清除浮动div*/
+
+.clear {
+    clear: both;
+}
+
+
+/*搜索框下热点*/
+
+.head_text li {
+    font-size: 12px;
+    float: left;
+    margin-right: 11px;
+    line-height: 30px;
+}
+
+.head_text li a {
+    color: #666;
+}
+
+.head_text li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.head_text .more a {
+    margin-left: 68px;
+}
+
+
+/*皮肤按钮*/
+
+.head_btn {
+    margin-top: 37px;
+    width: 135px;
+    height: 75px;
+    float: left;
+}
+
+.head_btn p {
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    margin-left: 15px;
+}
+
+button {
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: #0aa770;
+}
+
+.btn1:hover {
+    background-color: green;
+}
+
+.btn2 {
+    background-color: #FFC822;
+}
+
+.btn2:hover {
+    background-color: orange;
+}
+
+.btn3 {
+    background-color: #1AB2FF;
+}
+
+.btn3:hover {
+    background-color: #279FFF;
+}
+
+
+/*导航*/
+
+nav {
+    width: 100%;
+    height: 38px;
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+}
+
+nav li {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+    line-height: 38px;
+    text-align: center;
+}
+
+nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    color: black;
+}
+
+.active {
+    color: white;
+}
+
+
+/*内容*/
+
+.content {
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+}
+
+.cont_left {
+    width: 27%;
+    height: 440px;
+    float: left;
+}
+
+
+/*内容左半边上*/
+
+.cont_left1 {
+    width: 100%;
+    height: 220px;
+    border: 1px solid;
+}
+
+.cont_left11 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.cont_left11 .logo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png') no-repeat;
+    background-position: -18px -79px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+.cont_left1 li {
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.cont_left1 li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+
+/*内容左半边下*/
+
+.cont_left2 {
+    margin-top: 8px;
+    width: 100%;
+    height: 210px;
+    border: 1px solid;
+}
+
+.cont_left2_nav ul {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.cont_left2_nav li {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+}
+
+.cont_left2_nav li a {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+
+.cont_left2 img {
+    width: 100%;
+    height: 110px;
+}
+
+.cont_left2_con li {
+    margin-left: 5px;
+}
+
+.cont_left2_con li a {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*内容部分右边上*/
+
+.cont_right {
+    width: 72%;
+    height: 440px;
+    float: right;
+}
+
+.foucs {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.foucs_top {
+    padding-top: 20px;
+    padding-left: 25px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.foucs_top ul {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.logo2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png') no-repeat;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    margin-right: 2px;
+}
+
+.a {
+    background-position: 0 -196px;
+}
+
+.b {
+    background-position: 0 -476px;
+}
+
+.c {
+    background-position: 0 -476px;
+}
+
+.foucs ul li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.foucs ul li a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: #DEDEDE;
+    margin: 10px auto;
+}
+
+.foucs_bot {
+    padding-left: 25px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.foucs_bot ul {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.foucs_bot ul li {
+    margin-bottom: 13px;
+}
+
+
+/*内容右中*/
+
+.inner {
+    display: block;
+    width: 700px;
+    height: 20px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.inner li a {
+    text-align: center;
+    float: left;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+.inner li a:hover {
+    text-decoration: underline;
+}
+
+
+/*内容右下*/
+
+.like {
+    box-sizing: border-box;
+    width: 100%;
+    height: 112px;
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.like ul {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.like ul li {
+    margin-bottom: 12px;
+}
+
+.like ul a {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*皮肤种类*/
+
+
+/*绿色皮肤*/
+
+.green input[type=text],
+.green nav,
+.green .cont_left1,
+.green .cont_left2,
+.green .foucs,
+.green .like {
+    border-color: #0aa770;
+}
+
+.green input[type=submit],
+.green input[type=submit]:hover,
+.green .active {
+    background-color: #0aa770;
+}
+
+.green .head_text .more a,
+.green nav li a:hover,
+.green .cont_left1 li a:hover,
+.green .cont_left2_con li a:hover,
+.green .foucs ul li a:hover,
+.green .content .font_green,
+.green .inner,
+.green .inner li a,
+.green .like ul a:hover {
+    color: #0aa770;
+}
+
+.green nav,
+.green .cont_left1,
+.green .cont_left2,
+.green .foucs,
+.green .like {
+    background-color: #F8FFF9;
+}
+
+
+/*蓝色皮肤*/
+
+.blue input[type=text],
+.blue nav,
+.blue .cont_left1,
+.blue .cont_left2,
+.blue .foucs,
+.blue .like {
+    border-color: #1AB2FF;
+}
+
+.blue input[type=submit],
+.blue input[type=submit]:hover,
+.blue .active {
+    background-color: #1AB2FF;
+}
+
+.blue .head_text .more a,
+.blue nav li a:hover,
+.blue .cont_left1 li a:hover,
+.blue .cont_left2_con li a:hover,
+.blue .foucs ul li a:hover,
+.blue .content .font_green,
+.blue .inner,
+.blue .inner li a,
+.blue .like ul a:hover {
+    color: #1AB2FF;
+}
+
+.blue nav,
+.blue .cont_left1,
+.blue .cont_left2,
+.blue .foucs,
+.blue .like {
+    background-color: #E5FFFF;
+}
+
+
+/*黄色皮肤*/
+
+.yellow input[type=text],
+.yellow nav,
+.yellow .cont_left1,
+.yellow .cont_left2,
+.yellow .foucs,
+.yellow .like {
+    border-color: #FFC822;
+    ;
+}
+
+.yellow input[type=submit],
+.yellow input[type=submit]:hover,
+.yellow .active {
+    background-color: #FFC822;
+}
+
+.yellow .head_text .more a,
+.yellow nav li a:hover,
+.yellow .cont_left1 li a:hover,
+.yellow .cont_left2_con li a:hover,
+.yellow .foucs ul li a:hover,
+.yellow .content .font_green,
+.yellow .inner,
+.yellow .inner li a,
+.yellow .like ul a:hover {
+    color: orange;
+}
+
+.yellow nav,
+.yellow .cont_left1,
+.yellow .cont_left2,
+.yellow .foucs,
+.yellow .like {
+    background-color: white;
+}
