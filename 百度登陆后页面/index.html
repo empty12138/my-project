@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="./JS/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="./JS/baidu.js"></script>
+</head>
+
+<body>
+    <div class="wapper">
+        <!--头部导航-->
+        <header>
+            <div class="nav_left">
+                <ul>
+                    <li><a>天气情况</a></li>
+                    <li><a href="#">宝箱</a></li>
+                    <li><a id="skin">换肤</a></li>
+                    <li><a>消息</a></li>
+                </ul>
+                <div class="nav_massage">
+                    <div class="triange tri1"></div>
+                    <div class="new_massage">
+                        <p>您目前没有消息</p>
+                    </div>
+                    <div class="massage_btn">
+                        <button>清空消息</button>
+                        <button>消息设置</button>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav" href="http://www.nuomi.com/?cid=002540">糯米</a></li>
+                    <li><a class="nav" href="http://news.baidu.com/">新闻</a></li>
+                    <li><a class="nav" href="http://www.hao123.com/">hao123</a></li>
+                    <li><a class="nav" href="http://map.baidu.com/">地图</a></li>
+                    <li><a class="nav" href="http://v.baidu.com/">视频</a></li>
+                    <li><a class="nav" href="http://tieba.baidu.com/">贴吧</a></li>
+                    <li><a href="#">登陆</a></li>
+                    <li><a id="set" href="#">设置</a></li>
+                    <div class="set">
+                        <div class="triange tri2"></div>
+                        <a href="">搜索设置</a>
+                        <a href="">高级搜索</a>
+                        <a href="">关闭预测</a>
+                        <a href="">锁定历史</a>
+                    </div>
+                </ul>
+                <a id="more" href="#">更多产品</a>
+            </nav>
+            <div class="more">
+                <p>更多产品</p>
+                <a href="#">
+                    <span class="more_sp1"></span>
+                    <p>音乐</p>
+                </a>
+                <a href="#">
+                    <span class="more_sp2"></span>
+                    <p>图片</p>
+                </a>
+                <a href="#">
+                    <span class="more_sp3"></span>
+                    <p>知道</p>
+                </a>
+                <a href="#">
+                    <span class="more_sp4"></span>
+                    <p>文库</p>
+                </a>
+                <a href="#">
+                    <span class="more_sp5"></span>
+                    <p>音乐</p>
+                </a>
+                <span>全部产品>></span>
+            </div>
+            <div class="skin">
+                <div class="skin_head">
+                    <ul>
+                        <li class="skin_active">热门</li>
+                        <li>游戏</li>
+                        <li>卡通</li>
+                        <li>风景</li>
+                        <li>明星</li>
+                        <li>女神降临</li>
+                        <li>简约</li>
+                        <li>小清新</li>
+                    </ul>
+                    <p id="shouqi" href="#">收起↑</p>
+                </div>
+                <div class="line"></div>
+                <div class="skin_con skin_show">
+                    <ul>
+                        <li>
+                            <img src="./image/background/remen1.jpg">
+                            <p>热门1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/remen2.jpg">
+                            <p>热门2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/remen3.jpg">
+                            <p>热门3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/game1.jpg">
+                            <p>游戏1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/game2.jpg">
+                            <p>游戏2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/game3.jpg">
+                            <p>游戏3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con">
+                    <ul>
+                        <li>
+                            <img src="./image/background/caton1.jpg">
+                            <p>卡通1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/caton2.jpg">
+                            <p>卡通2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/caton3.jpg">
+                            <p>卡通3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/index1.jpg">
+                            <p>风景1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/index2.jpg">
+                            <p>风景2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/index3.jpg">
+                            <p>风景3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/star1.jpg">
+                            <p>明星1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/star2.jpg">
+                            <p>明星2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/star3.jpg">
+                            <p>明星3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/girl1.jpg" alt="敬请期待1">
+                            <p>女神1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/girl2.jpg" alt="敬请期待1">
+                            <p>女神2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/girl3.jpg" alt="敬请期待1">
+                            <p>女神3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/easy1.jpg" alt="敬请期待2">
+                            <p>简约1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/easy2.jpg" alt="敬请期待2">
+                            <p>简约2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/easy3.jpg" alt="敬请期待2">
+                            <p>简约3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skin_con ">
+                    <ul>
+                        <li>
+                            <img src="./image/background/clear1.jpg" alt="敬请期待3">
+                            <p>小清新1</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/clear2.jpg" alt="敬请期待3">
+                            <p>小清新2</p>
+                        </li>
+                        <li>
+                            <img src="./image/background/clear3.jpg" alt="敬请期待3">
+                            <p>小清新3</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="search">
+            <p>
+                <img class="imgone" src="./image/logo_white.png" alt="百度logo" />
+                <!--<img class="imgtwo" src="./image/plus_logo.png" alt="baidu"/>-->
+            </p>
+            <form action="http://baidu.com/s" target="_blank">
+                <input class="import" type="text" name="wd" autofocus/>
+                <input class="refer" type="submit" value="百度一下" />
+            </form>
+        </div>
+        <div id="floatsearch">
+            <div class="floatsea_in">
+                <img src="./image/plus_logo.png" alt="百度图标" />
+                <form id="search2" action="http://baidu.com/s" target="_blank">
+                    <input class="import" type="text" name="wd" autofocus/>
+                    <input class="refer" type="submit" value="百度一下" />
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_nav">
+                <ul>
+                    <li><span></span>我的关注</li>
+                    <li class="con_active">推荐</li>
+                    <li>导航</li>
+                    <li>视频</li>
+                    <li>购物</li>
+                    <p></p>
+                </ul>
+            </div>
+            <div class="con_con con_myfocus ">
+                <span>您还没有关注任何内容,赶快添加吧</span>
+                <br/>
+                <button>添加</button>
+            </div>
+            <div class="con_con con_hot con_show ">
+                <ul>
+                    <li><img src="./image/hot.gif"></li>
+                </ul>
+            </div>
+            <div class="con_con con_dh">
+                <ul>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                    <li>百度糯米</li>
+                    <li>京东商城</li>
+                    <li>一号店</li>
+                    <li>苏宁易购</li>
+                    <li>唯品会</li>
+                    <li>当当网</li>
+                </ul>
+            </div>
+            <div class="con_con con_video">
+                <ul class="shu">
+                    <li><img src="./image/vd1.gif"></li>
+                    <li><img src="./image/vd2.gif"></li>
+                    <li><img src="./image/vd3.gif"></li>
+                    <li><img src="./image/vd4.gif"></li>
+                </ul>
+                <ul class="heng">
+                    <li><img src="./image/vd5.gif"></li>
+                    <li><img src="./image/vd6.gif"></li>
+                    <li><img src="./image/vd7.gif"></li>
+                    <li><img src="./image/vd8.gif"></li>
+                </ul>
+            </div>
+            <div class="con_con con_shop">
+                <ul>
+                    <li><img src="./image/shop.gif"></li>
+                    <li><img src="./image/shop.gif"></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="footing">
+                <div class="footing_center">
+                    <div class="footing_text">
+                        <p class="footing-text1">
+                            <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+                            <a href="http://home.baidu.com/">关于百度</a>
+                            <a href="http://ir.baidu.com/">About Baidu</a>
+                        </p>
+                        <p>
+                            <span>©2016&nbspBaidu</span>
+                            <a href="http://www.baidu.com/duty/v">使用百度前必读</a>
+                            <a href="http://jianyi.baidu.com/">意见反馈 </a>
+                            <span>京ICP证030173号</span>
+                            <img src="./image/beian1.png" alt="备案图标" />
+                            <!-- 图片-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="turn_top">
+            <span>返回顶部</span>
+        </div>
+    </div>
+</body>
+
+</html>

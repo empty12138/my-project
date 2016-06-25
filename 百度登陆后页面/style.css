@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial;
+    color: black;
+}
+
+body {
+    background: url(./image/background/index1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wapper {
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    min-width: 1000px;
+    position: relative;
+}
+
+
+/*头部导航*/
+
+header {
+    width: 100%;
+    min-width: 950px;
+    height: 40px;
+    background-color: rgba(47, 47, 47, 0.4);
+}
+
+.nav_left {
+    float: left;
+    padding-left: 20px;
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+
+.nav_left a {
+    font-size: 13px;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav_massage {
+    box-sizing: border-box;
+    width: 275px;
+    height: 140px;
+    padding: 20px 20px 0 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    display: none;
+}
+
+.tri1 {
+    top: -10px;
+    left: 50%;
+}
+
+.new_massage {
+    height: 70px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.massage_btn {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 5px 27px;
+    text-align: center;
+}
+
+.massage_btn button {
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    border: 0;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.massage_btn button:first-child {
+    background-color: #c3c3c3;
+}
+
+.massage_btn button:last-child {
+    background-color: #3e83f3;
+}
+
+nav {
+    width: 480px;
+    height: 40px;
+    float: right;
+}
+
+nav ul {
+    width: 400px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+
+li {
+    list-style: none;
+    float: left;
+    _margin-right: -3px;
+}
+
+li a {
+    margin-left: 19px;
+    font-size: 13px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.nav {
+    font-weight: bold;
+}
+
+#more {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    float: right;
+    line-height: 23px;
+    margin-right: 13px;
+    margin-top: 8px;
+    width: 60px;
+    height: 24px;
+    background-color: #3e83f3;
+}
+
+
+/*更多下拉菜单*/
+
+.more {
+    box-sizing: border-box;
+    width: 88px;
+    height: 100%;
+    background-color: #f9f9f9;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #e7e7e7;
+    padding: 0 12px;
+    display: none;
+}
+
+.more p {
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    display: block;
+    line-height: 23px;
+    margin-top: 8px;
+    height: 30px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-left: 3px;
+}
+
+.more a {
+    box-sizing: border-box;
+    display: block;
+    width: 66px;
+    height: 76px;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.more a span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: auto;
+    background-image: url("./image/bdbri_icons_2e35e84b.png");
+}
+
+.more .more_sp1 {
+    background-position: -74px -5px;
+}
+
+.more .more_sp2 {
+    background-position: -112px -2px;
+}
+
+.more .more_sp3 {
+    background-position: -36px 0;
+}
+
+.more .more_sp4 {
+    background-position: -146px 0;
+}
+
+
+.more a p {
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.more > span {
+    margin: 34px 0;
+    text-decoration: underline;
+    display: block;
+    cursor: pointer;
+}
+
+
+/*设置*/
+
+#set {
+    margin-left: 19px;
+    font-size: 13px;
+    line-height: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.set {
+    width: 70px;
+    height: 107px;
+    background-color: #ffffff;
+    position: absolute;
+    right: -4px;
+    top: 40px;
+    border: 1px solid #fcfcfc;
+    -webkit-box-shadow: 0 0 4px 1px grey;
+    z-index: 10;
+    display: none;
+}
+
+.set a {
+    line-height: 26px;
+    font-size: 12px;
+    margin-left: 0;
+    text-decoration: none;
+    display: block;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+    color: #000;
+}
+
+.set a:hover {
+    background-color: #3e83f3;
+    color: white;
+}
+
+.triange {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #f8f8f8;
+}
+
+.tri2 {
+    top: -13px;
+    left: 29px;
+}
+
+
+/*搜索区域*/
+
+.search {
+    width: 652px;
+    height: 250px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+img {
+    width: 270px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.import {
+    width: 543px;
+    height: 20px;
+    float: left;
+    border: 1px solid #c3c3c3;
+    border-right: 0;
+    outline: none;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    _margin-right: -3px;
+    color: #000;
+}
+
+.import:focus {
+    border-color: #3e83f3;
+    padding-left: 5px;
+}
+
+
+/*提交按钮*/
+
+.refer {
+    width: 100px;
+    height: 36px;
+    background: #3e83f3;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.refer:hover {
+    background-color: #2160f3;
+    border-bottom: 1px solid #2160f3;
+    -webkit-box-shadow: 1px 1px 1px #dfdfdf;
+    cursor: pointer;
+}
+
+#floatsearch {
+    width: 100%;
+    height: 70px;
+    min-width: 1000px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 150;
+    display: none;
+}
+
+.floatsea_in {
+    position: relative;
+    width: 649px;
+    height: 36px;
+    margin: 15px auto;
+}
+
+#search2 {
+    display: block;
+    float: left;
+}
+
+#floatsearch img {
+    position: absolute;
+    left: -120px;
+    top: -4px;
+    display: block;
+    float: left;
+    width: 101px;
+    height: 33px;
+    ;
+}
+
+
+/*头部换肤功能*/
+
+.skin {
+    width: 100%;
+    height: 290px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 151;
+    display: none;
+}
+
+#shouqi {
+    margin-left: 50px;
+    line-height: 43px;
+    font-size: 14px;
+    color: #2160f3;
+    cursor: pointer;
+}
+
+.skin_head {
+    width: 900px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.skin_head li {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 0 15px;
+    color: #626262;
+    float: left;
+    cursor: pointer;
+}
+
+.skin_head li:hover {
+    color: #ffffff;
+    background-color: #4d8cf3;
+}
+
+.skin_head .skin_active {
+    background-color: #4d8cf3;
+    color: #ffffff;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.skin_con {
+    margin: 10px auto;
+    padding-left: 50px;
+    width: 850px;
+    height: 200px;
+    border: 1px solid #dfdfdf;
+    display: none;
+}
+
+.skin_con p {
+    margin: -20px;
+}
+
+.skin_con img {
+    margin: 30px;
+    width: 200px;
+    height: 130px;
+    border: 1px solid #dfdfdf;
+    cursor: pointer;
+}
+
+.skin_show {
+    display: block
+}
+
+
+/*内容区域*/
+
+.content {
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.con_nav {
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.content .con_nav li {
+    display: block;
+    width: 75px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: left;
+    cursor: pointer;
+}
+
+.content .con_nav li:first-child {
+    width: 120px;
+}
+
+.content .con_nav p {
+    width: 480px;
+    display: block;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: left;
+}
+
+.content .con_nav li:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content .con_nav li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content .con_nav .con_active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.con_con {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.con_show {
+    display: block;
+}
+
+
+/*我的关注*/
+
+.con_myfocus {
+    padding-top: 200px;
+    height: 500px;
+    text-align: center;
+}
+
+.con_myfocus span {
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.con_myfocus button {
+    margin-top: 40px;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    border: 0;
+    color: white;
+    background-color: #4d8cf3;
+}
+
+
+/*内容导航*/
+
+.con_dh {
+    height: 900px;
+    padding: 40px;
+}
+
+.con_dh li {
+    box-sizing: border-box;
+    width: 112px;
+    height: 50px;
+    margin: 10px 12px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 60px;
+    color: #515151;
+    background-color: #fff;
+}
+
+.con_dh li:hover {
+    border: 1px solid #dfdfdf;
+    background-color: snow;
+}
+
+
+/*内容视频*/
+
+.con_video {
+    height: 480px;
+    padding: 20px;
+}
+
+.con_video .shu li {
+    margin: 10px 11px;
+    width: 190px;
+    height: 270px;
+    border: 1px solid #dfdfdf;
+}
+
+.con_video .shu li img {
+    width: 190px;
+    height: 270px;
+}
+
+.con_video .heng li {
+    margin: 20px 11px;
+    border: 1px solid #dfdfdf;
+    width: 190px;
+}
+
+.con_video .heng li img {
+    width: 190px;
+}
+
+
+/*内容购物*/
+
+.con_shop {
+    padding: 10px 40px;
+    height: 1350px;
+}
+
+.con_shop li img {
+    width: 830px;
+    height: 640px;
+}
+
+
+/*内容 热门推荐*/
+
+.con_hot {
+    height: 600px;
+    padding: 0 25px;
+}
+
+.con_hot img {
+    width: 850px;
+}
+
+
+/*pc底部*/
+
+.footing {
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+}
+
+.footing_center {
+    width: 634px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.footing_text1 a {
+    margin-right: 13px;
+}
+
+.footing_text {
+    width: 334px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 13px;
+    padding-top: 8px;
+    margin: auto;
+}
+
+.footing_text img {
+    width: 14px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+    *margin-right: -3px;
+}
+
+.footing_text a,
+.footing_text span {
+    color: #ffffff;
+}
+
+
+/*返回顶部*/
+
+.turn_top {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(33, 33, 33, 0.83);
+    opacity: 0.7;
+    padding: 4px;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 470px;
+    left: 50%;
+    bottom: 50px;
+}
+
+.turn_top span {
+    color: #ffffff;
+    font-size: 20px;
+}
