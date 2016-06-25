@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>课程表</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    div {
+        width: 500px;
+        height: 250px;
+        margin: auto;
+        color: green;
+        background: lavender;
+    }
+    
+    table {
+        margin: auto;
+        width: 400px;
+        height: 160px;
+        border: 2px solid red;
+        border-collapse: collapse;
+    }
+    
+    tr {
+        width: 400px;
+        height: 30px;
+    }
+    
+    thead th {
+        border: 2px solid red;
+        background: #D5FA84;
+    }
+    
+    tr td {
+        border: 2px solid red;
+    }
+    
+    #center {
+        width: 400px;
+        height: 10px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+     tr.text{
+        background: #FAA752;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption>
+                <h1>课程表</h1>
+            </caption>
+            <!--原来使用tr，老师建议用<thead>代替tr-->
+            <thead>
+                <th>时间</th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </thead>
+            <!--表格内容处建议使用<tbdoy>包裹-->
+            <tbody>
+                <tr>
+                    <td class="test"rowspan="2">上午</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="center">
+                    <td class="test" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">下午</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
