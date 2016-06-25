@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wapper{
+    position: relative;
+    /*-webkit-perspective: 1000px;*/
+    /*-webkit-perspective-origin:-234% -155%;*/
+}
+/*整体大小*/
+.box{
+    width: 212px;
+    height: 212px;
+    margin:200px auto;
+    position: absolute;
+    left: 40%;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    -webkit-animation: spin 6s infinite linear;
+    -moz-animation: spin 6s infinite linear;
+    -ms-animation: spin 6s infinite linear;
+    -o-animation: spin 6s infinite linear;
+    animation: spin 6s infinite linear;
+}
+/*动画效果*/
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+
+    100%{
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+@-moz-keyframes spin{
+    0%{
+        -moz-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+
+    100%{
+        -moz-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+@-ms-keyframes spin{
+    0%{
+        -ms-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+
+    100%{
+        -ms-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+@-o-keyframes spin{
+    0%{
+        -o-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+
+    100%{
+        -o-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+@keyframes spin{
+    0%{
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+
+    100%{
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+/*6面属性*/
+[class^=chunk]{
+    box-sizing: border-box;
+    width: 212px;
+    height: 212px;
+    border: 1px solid black;
+    position: absolute;
+    opacity: 1;
+    font-size:20px;
+    background-color: white;
+}
+/*灰色*/
+.chunk1{
+    -webkit-transform: translatez(106px);
+    -moz-transform: translatez(106px);
+    -ms-transform: translatez(106px);
+    -o-transform: translatez(106px);
+    transform: translatez(106px);
+}
+/*红色*/
+.chunk2{
+    -webkit-transform: rotatey(90deg) translatez(106px);
+    -moz-transform: rotatey(90deg) translatez(106px);
+    -ms-transform: rotatey(90deg) translatez(106px);
+    -o-transform: rotatey(90deg) translatez(106px);
+    transform: rotatey(90deg) translatez(106px);
+}
+/*蓝色*/
+.chunk3{
+    -webkit-transform: rotatey(270deg) translatez(106px);
+    -moz-transform: rotatey(270deg) translatez(106px);
+    -ms-transform: rotatey(270deg) translatez(106px);
+    -o-transform: rotatey(270deg) translatez(106px);
+    transform: rotatey(270deg) translatez(106px);
+}
+/*橙色*/
+.chunk4{
+    -webkit-transform: rotatex(270deg) translatez(106px);
+    -moz-transform: rotatex(270deg) translatez(106px);
+    -ms-transform: rotatex(270deg) translatez(106px);
+    -o-transform: rotatex(270deg) translatez(106px);
+    transform: rotatex(270deg) translatez(106px);
+}
+/*绿色*/
+.chunk5{
+    -webkit-transform: rotatex(90deg) translatez(106px);
+    -moz-transform: rotatex(90deg) translatez(106px);
+    -ms-transform: rotatex(90deg) translatez(106px);
+    -o-transform: rotatex(90deg) translatez(106px);
+    transform: rotatex(90deg) translatez(106px);
+}
+/*黄色*/
+.chunk6{
+    -webkit-transform:rotatez(180deg) rotatey(180deg) translatez(106px);
+    -moz-transform:rotatez(180deg) rotatey(180deg) translatez(106px);
+    -ms-transform:rotatez(180deg) rotatey(180deg) translatez(106px);
+    -o-transform:rotatez(180deg) rotatey(180deg) translatez(106px);
+    transform:rotatez(180deg) rotatey(180deg) translatez(106px);
+}
+.grey,.red,.blue,.orange,.green,.yellow{
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    float: left;
+}
+.grey{  background-color: grey; }
+.red{  background-color: red;  }
+.blue{  background-color: dodgerblue;  }
+.orange{  background-color: orange;  }
+.green{  background-color:green;  }
+.yellow{  background-color: yellow;  }

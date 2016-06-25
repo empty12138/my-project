@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url("background_image.png");
+    font-size: 12px;
+    font-family: "Sans-serif";
+}
+/*主容器*/
+#content{
+    width: 710px;
+    height: auto;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+#nav{
+    width: 647px;
+    height: 76px;
+    /*background-color: aquamarine;*/
+    margin: auto;
+}
+/*表格整体定位,大小*/
+#table{
+    margin-bottom: 10px;
+}
+img{float: left}
+thead td{
+    text-align: center;
+}
+table{
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+    width: 637px;
+    margin: 0px auto;
+}
+td{
+    border: 1px solid darkgray;
+    padding: 2px;
+    line-height: 150%;
+}
+.left{
+    text-align: right;
+    width: 129.5px;
+}
+.title{
+    height: 23px;
+    color: #0c2688;
+    background-color:#DCDCDC;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+/*文字效果*/
+.red{  color: red;  }
+.blue{color: blue;}
+td h2{
+    font-size: 13px;
+}
+li a{
+    font-size: 12px;
+    color: #ef3484;
+    font-family: "Microsoft YaHei";
+    text-decoration: none;
+}
+li{
+    float: left;
+    margin: 5px;
+}
+ul{
+    float: right;
+    list-style: none;
+    line-height: 80px;
+}
+span a:hover{
+    color: #ff0000;
+}
+h1{
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+/*表单效果*/
+input[type=text],input[type=number],input[type=tel],input[type=email]{
+    width: 186px;
+}
+input[type=submit]{
+    width: 72px;
+    height: 18px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+textarea{
+    width: 382px;
+    height: 96px;
+}
+/*底部*/
+#footer{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 5px auto;
+}
+input{
+    outline: none;
+}

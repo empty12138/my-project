@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>3D立方体</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="author" content="@my_programmer">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:"微软雅黑";font-size:50px;
+        }
+        .frame{
+            /*-webkit-perspective: 800px;*/
+            /*-webkit-perspective-origin:153% -117%;*/
+            width:320px;
+            height:320px;
+            margin:150px auto;
+            /*搭建3D环境*/
+            -webkit-transform-style:preserve-3d;
+            /*调用动画函数*/
+            -webkit-animation: spin 6s infinite linear;
+        }
+        [class^=chunk]{
+            width:240px;
+            height:240px;
+            list-style:none;
+            position:absolute;
+            background:rgba(0,0,0,.3);
+        }
+        .box{
+            text-align:center;
+            font-size:100px;
+            line-height:200px;
+        }
+        .chunk1{
+            background-color: grey;
+        }
+        .chunk2{
+            background-color:red ;
+        }
+        .chunk3{
+            background-color: dodgerblue;
+        }
+        .chunk4{
+            background-color: orange;
+        }
+        .chunk5{
+            background-color: green;
+        }
+        .chunk6{
+            background-color: yellow;
+        }
+
+        /*上、下 rotateX(90deg)*/
+        /*左、右 rotateY(270deg)*/
+        /*translateZ(?deg) 位移的值取决于元素的尺寸*/
+        .frame .chunk1{-webkit-transform:rotateX(90deg)   translateZ(119px);}
+        .frame .chunk2{-webkit-transform:rotateX(270deg)  translateZ(119px);}
+        .frame .chunk3{-webkit-transform:rotateY(90deg) translateZ(119px);}
+        .frame .chunk4{-webkit-transform:rotateY(270deg) translateZ(119px);}
+        .frame .chunk5{-webkit-transform:translateZ(-119px);}
+        .frame .chunk6{-webkit-transform: translateZ(119px);}
+        .box{
+            width:78px;
+            height:78px;
+            border:1px solid #fff;
+            float:left;
+            /*background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 30%, rgba(0, 128, 0, 0.2) 100%);*/
+            font-size:30px;
+            color:#eee;
+            text-align:center;
+            line-height:78px;
+        }
+        p{
+            /*font: bold 35px/60px Helvetica, Arial, Sans-serif;*/
+            /*text-align: center;*/
+            /*color: #eee;*/
+            /*text-shadow: 0px 2px 6px #333;*/
+        }
+        /*动画函数*/
+        @-webkit-keyframes spin{
+            from{
+                -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+                transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+            }
+
+            to{
+                -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+                transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="frame">
+    <div class="boxout">
+        <div class="chunk1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">灰色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <div class="chunk2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">红色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <div class="chunk3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">蓝色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <div class="chunk4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">橙色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <div class="chunk5">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">绿色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <div class="chunk6">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">蓝色</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
